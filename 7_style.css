@@ -1,5 +1,3 @@
-/*style.css */
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,7 +6,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -25,37 +22,35 @@ body {
 }
 
 .nav-logo img {
-    height: 4cm; /* Set the height to 1cm */
-    width: 5cm; /* Set the width to 5cm */
-    border: none; /* Removes any borders */
-    border-radius: 0; /* Removes any round corners */
-    box-shadow: none; /* Removes any shadow effects */
+    height: 4cm;
+    width: 5cm;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .navbar-container h1 {
-    margin-left: 20px; /* Add space between the logo and the text */
+    margin-left: 20px;
     font-size: 2em;
     color: #333;
 }
 
-/* Increase the font size for the span inside h1 */
 .navbar-container h1 .about-me {
-    font-size: 3em; /* Adjust the font size as needed */
-    color: #333; /* Adjust the text color if needed */
-    font-weight: 800; /* Make the text bold */
+    font-size: 3em;
+    color: #333;
+    font-weight: 800;
     align-items: center;
-    text-transform: uppercase; /* Optional: Make text uppercase */
+    text-transform: uppercase;
 }
 
-/* Menu Toggle for Mobile */
 .nav-toggle {
-    display: none; /* Hidden by default, will be used for mobile view */
+    display: none;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Add spacing between items */
+    gap: 1rem;
 }
 
 .nav-menu a {
@@ -65,13 +60,11 @@ body {
     transition: color 0.3s;
 }
 
-/* Active button styles */
 .RECRUITMENT-button {
     background-color: #090809;
     color: #fff;
 }
 
-/* Header Styles */
 header {
     width: 100%;
     background: linear-gradient(to right, #030303, #3c3a39);
@@ -88,7 +81,6 @@ header p {
     text-align: center;
 }
 
-/* Footer Styles */
 footer {
     width: 100%;
     background: linear-gradient(to right, #000000, #3c3b3b);
@@ -97,7 +89,6 @@ footer {
     text-align: center;
 }
 
-/* Section Styles */
 section {
     padding: 20px;
     text-align: center;
@@ -131,12 +122,10 @@ section {
     background-color: #0e76a8;
 }
 
-/* Icon Link Hover */
 .icon-link:hover {
     transform: scale(1.1);
 }
 
-/* Dark Mode Styling */
 .dark-mode {
     background-color: #333;
     color: #fff;
@@ -148,12 +137,12 @@ section {
 }
 
 .dark-mode .navbar a {
-    color: #fff; /* Ensure navbar links are white in dark mode */
+    color: #fff;
 }
 
 .dark-mode .navbar-container h1 {
-    background-color:#000000;
-    color: #fff; /* Ensure header text is white in dark mode */
+    background-color: #000000;
+    color: #fff;
 }
 
 .dark-mode header, .dark-mode footer {
@@ -173,24 +162,80 @@ section {
     background-color: #0077b5;
 }
 
-/* Additional Styling for Text */
 .dark-mode .nav-menu a {
-    color: #fff; /* Ensure menu text is white in dark mode */
+    color: #fff;
 }
 
-/* Add transition for smooth theme change */
 @media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
     .nav-menu {
-        display: none; /* Hide by default on mobile */
+        display: none;
         flex-direction: column;
         width: 100%;
     }
 
     .nav-menu.active {
-        display: flex; /* Display the menu when active */
+        display: flex;
     }
 
     .nav-toggle {
-        display: block; /* Show the toggle button on mobile */
+        display: block;
+    }
+
+    .navbar-container h1 {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+
+    .navbar-container h1 .about-me {
+        font-size: 2em;
+    }
+
+    header {
+        padding: 50px 0;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .icon-link {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-container h1 {
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
+
+    .navbar-container h1 .about-me {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 30px 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .icon-link {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 }
