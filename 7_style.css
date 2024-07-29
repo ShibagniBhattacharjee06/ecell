@@ -1,0 +1,196 @@
+/*style.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 4cm; /* Set the height to 1cm */
+    width: 5cm; /* Set the width to 5cm */
+    border: none; /* Removes any borders */
+    border-radius: 0; /* Removes any round corners */
+    box-shadow: none; /* Removes any shadow effects */
+}
+
+.navbar-container h1 {
+    margin-left: 20px; /* Add space between the logo and the text */
+    font-size: 2em;
+    color: #333;
+}
+
+/* Increase the font size for the span inside h1 */
+.navbar-container h1 .about-me {
+    font-size: 3em; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color if needed */
+    font-weight: 800; /* Make the text bold */
+    align-items: center;
+    text-transform: uppercase; /* Optional: Make text uppercase */
+}
+
+/* Menu Toggle for Mobile */
+.nav-toggle {
+    display: none; /* Hidden by default, will be used for mobile view */
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Add spacing between items */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+/* Active button styles */
+.RECRUITMENT-button {
+    background-color: #090809;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background: linear-gradient(to right, #030303, #3c3a39);
+    color: #f3e6e6;
+    padding: 100px 0;
+    text-align: center;
+}
+
+header p {
+    color: #ccc;
+    max-width: 60%; 
+    margin: 0 auto; 
+    padding: 0 25px;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #000000, #3c3b3b);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.email-icon {
+    background-color: #dd4b39;
+}
+
+.call-icon {
+    background-color: rgb(9, 225, 9);
+}
+
+.linkedin-icon {
+    background-color: #0e76a8;
+}
+
+/* Icon Link Hover */
+.icon-link:hover {
+    transform: scale(1.1);
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .navbar a {
+    color: #fff; /* Ensure navbar links are white in dark mode */
+}
+
+.dark-mode .navbar-container h1 {
+    background-color:#000000;
+    color: #fff; /* Ensure header text is white in dark mode */
+}
+
+.dark-mode header, .dark-mode footer {
+    background: #333;
+    color: #fff;
+}
+
+.dark-mode .icon-link.email-icon {
+    background-color: #c32a36;
+}
+
+.dark-mode .icon-link.call-icon {
+    background-color: #4caf50;
+}
+
+.dark-mode .icon-link.linkedin-icon {
+    background-color: #0077b5;
+}
+
+/* Additional Styling for Text */
+.dark-mode .nav-menu a {
+    color: #fff; /* Ensure menu text is white in dark mode */
+}
+
+/* Add transition for smooth theme change */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide by default on mobile */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Display the menu when active */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle button on mobile */
+    }
+}
