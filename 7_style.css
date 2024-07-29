@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -45,6 +47,8 @@ body {
 
 .nav-toggle {
     display: none;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -198,44 +202,5 @@ section {
 
     header {
         padding: 50px 0;
-    }
-
-    section {
-        width: 90%;
-    }
-
-    .icon-link {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .navbar {
-        padding: 5px;
-    }
-
-    .navbar-container h1 {
-        font-size: 1.2em;
-        margin-left: 5px;
-    }
-
-    .navbar-container h1 .about-me {
-        font-size: 1.5em;
-    }
-
-    header {
-        padding: 30px 0;
-    }
-
-    section {
-        width: 100%;
-    }
-
-    .icon-link {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
     }
 }
